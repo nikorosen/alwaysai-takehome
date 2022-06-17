@@ -9,10 +9,10 @@ import styles from '../styles/Navbar.module.css';
 export default function Navbar(props) {
 
     return <div className={styles.navbar}>
-        <Link href=''><Image src="/logo.svg" height='30em' width='100em'></Image></Link>
+        <Link href=''><Image alt="logo" src="/logo.svg" height='30em' width='100em'></Image></Link>
 
         <ul className={styles.menu}>
-            {Object.keys(props.menu).map( key => <li><Link href=''>{key}</Link></li>)}
+            {Object.keys(props.menu).map( key => <li key={key}><Link href=''>{key}</Link></li>)}
         </ul>
 
         <span className={styles['btn-group']}>

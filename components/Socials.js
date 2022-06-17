@@ -11,7 +11,7 @@ export default function Socials() {
     const icons = [faLinkedinIn, faYoutube, faTwitter, faInstagram, faDiscord]
     
     return <ul className={styles.icons}>
-        {icons.map(i => <li className="fa-layers fa-fw"> 
+        {icons.map(i => <li key={i} className="fa-layers fa-fw"> 
         <a><FontAwesomeIcon icon={i}/></a> </li>)}
       </ul>
   }

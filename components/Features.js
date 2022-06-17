@@ -36,7 +36,7 @@ function FeatureTable(props) {
                 </tr>
 
                 {records.map(r =>
-                    <tr className={ ['Users', 'Model Training', 'Storage'].includes(r[0]) ? styles['accent'] : ''}>
+                    <tr key={r[0]} className={ ['Users', 'Model Training', 'Storage'].includes(r[0]) ? styles['accent'] : ''}>
                         <td style={{ textAlign: 'start' }}>{r[0]}</td>
                         <td>{typeof r[1] === 'boolean' && r[1] ? <FontAwesomeIcon icon={faCheck} className={styles.icon} /> : r[1]}</td>
                         <td>{typeof r[2] === 'boolean' && r[2] ? <FontAwesomeIcon icon={faCheck} className={styles.icon} /> : r[2]}</td>

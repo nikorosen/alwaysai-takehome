@@ -39,7 +39,7 @@ export default function Tiers() {
             <p className='subheading'>No surprise fees.</p>
 
             <div className={styles['container']}>
-                {Object.keys(tiers).map(i => <Card tier={tiers[i]} />)}
+                {Object.keys(tiers).map(i => <Card key={tiers[i].title} tier={tiers[i]} />)}
             </div>
 
         </section>
@@ -57,7 +57,7 @@ function Card(props) {
             <p>{props.tier.desc}</p>
 
             <ul>
-                {props.tier.features.map(i => <li><FontAwesomeIcon icon={faCheckCircle} className={styles.icon} /> {i}</li>)}
+                {props.tier.features.map(i => <li key={props.tier + ' ' + i}><FontAwesomeIcon icon={faCheckCircle} className={styles.icon} /> {i}</li>)}
             </ul>
 
             <a href="#features" className={styles['btn']}/>

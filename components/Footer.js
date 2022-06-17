@@ -12,7 +12,7 @@ export default function Footer(props) {
     return <footer className={styles.footer}>
         <div className={styles['footer-body']}>
             <div className={styles.socials}>
-                <Image src="/logo.svg" height='30em' width='100em'></Image>
+                <Image alt="logo" src="/logo.svg" height='30em' width='100em'></Image>
                 <p>alwaysAI is a software company located in San
                     Diego, CA. We make computer vision come alive
                     on the edge - where work and life happen.</p>
@@ -31,10 +31,10 @@ function SiteMap(props) {
 
     return <ul className={styles.sitemap}>
     {Object.keys(props.menu).map(key =>
-        <li>
+        <li key={key}>
             <ul>
-                <li style={{ color: 'black' }}><b>{key}</b></li>
-                {props.menu[key].map(i => <li><Link href=''>{i}</Link></li>)}
+                <li key={key + ' title'}style={{ color: 'black' }}><b>{key}</b></li>
+                {props.menu[key].map(i => <li key={i}><Link href=''>{i}</Link></li>)}
             </ul>
         </li>
     )}
