@@ -111,7 +111,10 @@
     height: 30em;
     width: 15em;
 
-    background-image: repeating-linear-gradient(0deg, transparent 20px, rgba(255,255,255,.04) 20px);
+    /* background-image: repeating-linear-gradient(0deg, transparent 20px, rgba(255,255,255,.04) 20px); */
+    border: 1px  rgba(255,255,255,.1) solid;
+    outline: 1px  rgba(255,255,255,.1) solid;
+    outline-offset: 5px;
   }
 
   .card:hover li, .card:hover p {
@@ -139,6 +142,7 @@
     background-color: primary-color;
     border-radius: 1em;
     padding: .25em 1em .25em 1em;
+    z-index: 1;
   }
 
   .premium:hover::before {
@@ -150,6 +154,7 @@
     background-color: primary-color;
     border-radius: 1em;
     padding: .25em 1em .25em 1em;
+    z-index: 1;
   }
 
   .enterprise:hover::before {
@@ -161,4 +166,5 @@
     background-color: primary-color;
     border-radius: 1em;
     padding: .25em 1em .25em 1em;
+    z-index: 1;
   }

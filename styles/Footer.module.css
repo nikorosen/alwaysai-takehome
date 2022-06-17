@@ -11,6 +11,10 @@
     color: text-color;
   }
 
+  .footer img {
+    cursor: pointer;
+}
+
 .footer p {
     font-size: .7rem;
 }
