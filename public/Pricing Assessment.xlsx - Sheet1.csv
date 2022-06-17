@@ -1,0 +1,26 @@
+Features,alwaysAI Standard,alwaysAI Premium,alwaysAI Enterprise
+Access to EdgeIQ API Library,TRUE,TRUE,TRUE
+alwaysAI CLI,TRUE,TRUE,TRUE
+alwaysAI 75+ Starter Apps,TRUE,TRUE,TRUE
+alwaysAI Object Detection,TRUE,TRUE,TRUE
+alwaysAI Pose Estimation,TRUE,TRUE,TRUE
+alwaysAI Semantic Segmentation,TRUE,TRUE,TRUE
+alwaysAI Classification,TRUE,TRUE,TRUE
+alwaysAI Model Catalog (100+ pre-trained Models),TRUE,TRUE,TRUE
+Upload of Private Models in 7 different frameworks,TRUE,TRUE,TRUE
+Desktop Installer & Application,TRUE,TRUE,TRUE
+Users,2 Full-Access Users,5 Full-Access Users,Unlimited
+Model Training,60 hours monthly,200 hours monthly,500 hours monthly
+Storage,100 gb storage,300 gb storage,1 TB+
+Deployments (included in Year 1),10 deployments,50 deployments,150 deployments
+Annotation,Dedicated CVAT instance,Dedicated CVAT instance,Dedicated CVAT + Annotation Services
+alwaysAI Analytics,"CSV export supported, export into BI Tool","CSV export supported, export into BI Tool",Custom Dashboard
+alwaysAI TensorRT Conversion,Custom development required,Custom development required,TRUE
+Production Mode,TRUE,TRUE,TRUE
+Offline Devices,TRUE,TRUE,TRUE
+Application Auto-Start,TRUE,TRUE,TRUE
+Premium Support,TRUE,TRUE,TRUE
+Dedicated Technical Account Manager,TRUE,TRUE,TRUE
+Strategic Hardware Expertise/Planning,TRUE,TRUE,TRUE
+Yearly Platform Subscription Fee,"$4,000 (paid annually)","$6,000 (paid annually)","$10,000 (paid annually)"
+Professional Services (Discounted),$175/hour,$175/hour,$175/hour

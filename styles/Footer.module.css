@@ -1,0 +1,56 @@
+@value colors: "../styles/colors.css";
+@value primary-background-color, secondary-background-color, text-color from colors;
+
+.footer {
+    padding: 5vh 5vw 3vh 5vw;
+    background: primary-background-color;
+    box-shadow: 0, -4px 5px, secondary-background-color;
+    z-index: 1;
+    border-top: 3px secondary-background-color solid;
+    font-size: .6rem;
+    color: text-color;
+  }
+
+.footer p {
+    font-size: .7rem;
+}
+
+.footer-body {
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 1vh;
+    justify-content: space-between;
+}
+
+.sitemap {
+    display: flex;
+    font-size: .7rem;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 2em;
+    column-gap: 2em;
+}
+
+.sitemap ul {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    row-gap: 1em;
+}
+
+  .socials {
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
+    min-width: 30%;
+    margin-right: 2em;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px secondary-background-color solid;
+    padding-top: 2vh;
+    width: 100%;
+    font-size: .7rem;
+  }

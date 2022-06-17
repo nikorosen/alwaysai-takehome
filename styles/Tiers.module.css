@@ -1,0 +1,164 @@
+@value colors: "../styles/colors.css";
+@value primary-color, secondary-color, tertiary-color, primary-background-color, secondary-background-color, text-color, accent-color from colors;
+
+.icon {
+    color: secondary-color;
+    font-size: .75rem;
+    padding-right: .5em;
+  }
+
+.tiers {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 6.5vh 15vw 12vh 15vw;
+    background-color: secondary-background-color;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    background: primary-background-color;
+    border-radius: 1rem;
+    height: 34vh;
+    width: 75em;
+    
+    align-self: center;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 4em;
+    font-size: .5rem;
+    column-gap: 2em;
+
+    
+  }
+  
+  .container p {
+    font-size: .6rem;
+    margin: 0em;
+  }
+  
+  .container h3 {
+    font-size: 1.25rem;
+    margin: 0em;
+    margin-bottom: .5em;
+    width: 100%;
+    
+  }
+  
+  .card {
+    
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    align-content: space-between;
+    width: 25%;
+    transition: all .5s ease;
+
+    
+  }
+
+
+  
+  .card ul {
+    color: text-color;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 5vh;
+    
+  }
+  
+  .card li {
+    padding: .75em 0 0 0;
+    font-size: .6rem;
+  }
+  
+ 
+  .btn {
+    text-align: center;
+    background-color: secondary-color;
+    color: primary-background-color;
+    padding: .75em 2em .75em 2em;
+    border-radius: .25em;
+    width: 100%;
+    font-size: .6rem;
+    cursor: pointer;
+  }
+
+  .btn:before {
+    content: 'Request Pricing';
+  }
+
+  .card:hover {
+    background: secondary-color;
+    
+    color: primary-background-color;
+    width: 35%;
+    padding: 2em;
+    border-radius: 1em;
+    transition: all .5s ease;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.25);  
+  }
+
+  .card:hover:after {
+    content: '';
+    position: absolute;
+    margin-left: 18em;
+    margin-top: -8em;
+    transform: rotate(30deg);
+    height: 30em;
+    width: 15em;
+
+    background-image: repeating-linear-gradient(0deg, transparent 20px, rgba(255,255,255,.04) 20px);
+  }
+
+  .card:hover li, .card:hover p {
+    color: primary-background-color;
+  }
+
+  .card:hover .btn {
+    background-color: accent-color;
+  }
+
+  .card:hover .btn::before {
+    content: "View All Features"
+  }
+
+  .card:hover .icon {
+    color: primary-background-color;
+  }
+
+  .standard:hover::before {
+    content:'Best Value';
+    text-align: center;
+    position: relative;
+    right: -13.5em;
+    color: white;
+    background-color: primary-color;
+    border-radius: 1em;
+    padding: .25em 1em .25em 1em;
+  }
+
+  .premium:hover::before {
+    content:'Most Popular';
+    text-align: center;
+    position: relative;
+    right: -12em;
+    color: white;
+    background-color: primary-color;
+    border-radius: 1em;
+    padding: .25em 1em .25em 1em;
+  }
+
+  .enterprise:hover::before {
+    content:'Most Features';
+    text-align: center;
+    position: relative;
+    right: -12em;
+    color: white;
+    background-color: primary-color;
+    border-radius: 1em;
+    padding: .25em 1em .25em 1em;
+  }

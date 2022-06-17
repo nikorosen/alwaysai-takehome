@@ -1,16 +1,50 @@
+.root {
+  --accent-color: #f2303a;
+  --text-color: #848199;
+  --primary-color: #231d4f;
+  --secondary-color: #4924e2;
+  --tertiary-color: #eeecf9;
+  --background-color: #ffffff;
+  --secondary-background-color: #f5f5fa;
+  --secondary-accent-color: #2bd5be;
+  --tertiary-accent-color: #d9f7f3;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  color: #848199;
+  font-size: .8rem;
 }
 
 * {
   box-sizing: border-box;
 }
+
+.heading {
+  color: #231d4f;
+  font-size: 1.75rem;
+  width: 100%;
+  margin: 0em;
+}
+
+.subheading {
+  color: #848199;
+  width: 100%;
+  padding-bottom: 2.5vh;
+}
+
+

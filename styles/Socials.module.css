@@ -1,0 +1,21 @@
+@value colors: "../styles/colors.css";
+@value primary-background-color, secondary-background-color, text-color from colors;
+
+.icons {
+
+    display: flex;
+    flex-flow: row wrap;
+    text-align: start;
+    list-style-type: none;
+    margin-top: 3vh;
+    padding: 0em;
+    column-gap: 1em;
+}
+
+.icons li {
+    background-color: secondary-background-color;
+    padding: 1em;
+    border-radius: 100%;
+    color: black;
+    font-size: .8rem;
+}

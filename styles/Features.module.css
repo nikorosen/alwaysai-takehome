@@ -1,0 +1,57 @@
+
+@value colors: "../styles/colors.css";
+@value primary-color, secondary-color, primary-background-color, secondary-background-color, text-color, secondary-accent-color, tertiary-accent-color from colors;
+
+.features {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding: 3vh 10vh 10vh 10vh;
+}
+
+.feature-table {
+    border-radius: .25rem;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.04), -4px 4px 10px rgba(0,0,0,0.04);
+    padding: .5em;
+    border-spacing: 0;
+    margin-top: 4vh;
+  }
+  
+  .feature-table tr {
+    border-radius: .25em;
+  }
+  
+  .feature-table th {
+    color: secondary-color;
+    padding-bottom: 1.5em;
+    font-size: 1.25rem;
+  }
+  
+  .feature-table th:nth-child(1) {
+    color: text-color;
+    text-align: start;
+    font-size: .75rem;
+  }
+  
+  .feature-table td {
+    padding: .75em 1em .75em 1em;
+    font-size: .75rem;
+    width: 5%;
+  }
+
+  .feature-table tr:nth-child(even) {
+    background-color: secondary-background-color;
+  }
+
+  .feature-table tr:nth-last-child(-n+2) {
+    background-color: rgba(100,0,200,0.075);
+  }
+
+  .accent {
+    background-color: tertiary-accent-color !important;
+  }
+
+  .icon {
+    color: secondary-accent-color;
+    font-size: 1.25rem;
+  }

@@ -1,0 +1,42 @@
+@value colors: "../styles/colors.css";
+@value primary-background-color, secondary-background-color, accent-color from colors;
+
+.navbar {
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px secondary-background-color solid;
+    font-size: .7rem;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: center;
+    width: 50%;
+    font-weight: bold;
+}
+
+.menu li {
+    padding: 2em;
+}
+
+.btn {
+    border: 1px accent-color solid;
+    color: accent-color;
+    padding: .6em 1em .6em 1em;
+    margin: 0em .4em 0em .4em;
+    border-radius: .75em;
+    cursor: pointer;   
+}
+
+.btn-alt {
+    background: accent-color;
+    color: primary-background-color;
+    padding: .6em 1em .6em 1em;
+    margin: 0em .4em 0em .4em;
+    border-radius: .75em;
+    cursor: pointer;
+}
