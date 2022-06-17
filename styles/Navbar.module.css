@@ -44,3 +44,18 @@
     border-radius: .75em;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+
+.btn {
+    padding: .3em .5em .3em .5em;
+}
+
+.btn-alt {
+    padding: .3em .5em .3em .5em;
+}
+
+.menu {
+    display: none;
+}
+  }

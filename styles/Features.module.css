@@ -55,3 +55,19 @@
     color: secondary-accent-color;
     font-size: 1.25rem;
   }
+
+  @media only screen and (max-width: 600px) {
+
+.features {
+  padding: 2em;
+}
+
+    .feature-table th {
+      font-size: .75rem;
+    }
+    
+    .feature-table td {
+      font-size: .5rem;
+    }
+
+  }
