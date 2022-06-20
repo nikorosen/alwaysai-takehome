@@ -25,6 +25,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  opacity: 0.75;
+}
+
 p {
   color: #848199;
   font-size: .8rem;
